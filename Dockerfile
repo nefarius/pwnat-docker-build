@@ -27,5 +27,4 @@ RUN git clone https://github.com/samyk/pwnat.git
 
 WORKDIR /data/pwnat
 
-RUN make "CC=/opt/diet/bin/diet ${CROSS}gcc -D_BSD_SOURCE" all && \
-    cp ./pwnat /data/out
+RUN make "CC=/opt/diet/bin/diet ${CROSS}gcc -D_BSD_SOURCE" all
