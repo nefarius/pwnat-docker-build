@@ -1,6 +1,8 @@
 {
     "cSpell.words": [
         "aarch",
+        "BUILDARCH",
+        "gnueabihf",
         "libc",
         "pwnat"
     ]
