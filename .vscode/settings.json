@@ -2,6 +2,7 @@
     "cSpell.words": [
         "aarch",
         "BUILDARCH",
+        "dietlibc",
         "gnueabihf",
         "libc",
         "pwnat"
