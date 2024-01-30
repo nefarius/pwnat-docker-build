@@ -8,9 +8,9 @@ Dockerfile to produce arm and aarch64 builds of [pwnat](https://github.com/samyk
 
 ```bash
 # ARM64/aarch64 build
-docker build --build-arg="BUILDARCH=aarch64" --build-arg="CROSS=aarch64-linux-gnu-" -t pwnat-docker-build .
+docker build --build-arg="BUILDARCH=aarch64" --build-arg="CROSS=aarch64-linux-gnu-" -t pwnat-docker-build https://github.com/nefarius/pwnat-docker-build.git
 # ARM 32-bit build
-docker build --build-arg="BUILDARCH=arm" --build-arg="CROSS=arm-linux-gnueabihf-" -t pwnat-docker-build .
+docker build --build-arg="BUILDARCH=arm" --build-arg="CROSS=arm-linux-gnueabihf-" -t pwnat-docker-build https://github.com/nefarius/pwnat-docker-build.git
 
 # extract the built binary from the container to the host directory
 docker run --rm -it -v "${PWD}:/out" pwnat-docker-build cp /data/pwnat/pwnat /out/pwnat
